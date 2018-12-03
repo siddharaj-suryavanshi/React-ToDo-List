@@ -56,37 +56,57 @@ export default class TodoInput extends React.Component {
   render() {
     return (
       <div>
-        Task Name
-        <input
-          type="text"
-          value={this.state.taskName}
-          onChange={this.handleChange1}
-        />
-        Task priority
-        <select onChange={this.handleChange2}>
-          <option>None</option>
-          <option value="High">High</option>
-          <option value="Medium">Medium</option>
-          <option value="Low">Low</option>
-        </select>
-        Due Date
-        <input
-          type="date"
-          value={this.state.dueDate}
-          onChange={this.handleChange3}
-        />
-        <button
-          className="btn btn-primary"
-          onClick={() =>
-            this.addTodo(
-              this.state.taskName,
-              this.state.priority,
-              this.state.dueDate
-            )
-          }
-        >
-          Submit
-        </button>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              Task Name
+              <input
+                type="text"
+                value={this.state.taskName}
+                onChange={this.handleChange1}
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              Task priority
+              <select onChange={this.handleChange2} class="form-control">
+                <option>None</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              Due Date
+              <input
+                type="date"
+                value={this.state.dueDate}
+                onChange={this.handleChange3}
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <button
+                class="btn btn-md is-green mar-top"
+                onClick={() =>
+                  this.addTodo(
+                    this.state.taskName,
+                    this.state.priority,
+                    this.state.dueDate
+                  )
+                }
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

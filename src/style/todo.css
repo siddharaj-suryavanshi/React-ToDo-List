@@ -1,0 +1,391 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+/* Links */
+
+a,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+a:active,
+a:focus {
+  color: #3a45ac;
+  outline: #3a45ac solid 1px;
+  border: 0 !important;
+  text-decoration: none;
+}
+textarea:focus,
+select:focus,
+input:focus,
+button:focus {
+  outline: #3a45ac solid 1px;
+}
+
+a:focus img {
+  outline: #3a45ac solid 1px;
+  border: 0 !important;
+}
+
+p {
+  padding: 0.3125rem 0;
+}
+
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+ol,
+p,
+pre,
+textarea {
+  display: block;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-bottom: 0;
+}
+
+h2 span {
+  border-bottom: 1px solid #ff5500;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  margin-bottom: -1px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Header section */
+
+#skiptocontent a {
+  left: 0;
+  position: absolute;
+  top: -40px;
+  font-size: 0.75rem;
+  padding: 2px;
+}
+
+#skiptocontent a:active,
+#skiptocontent a:focus {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition-delay: 0s, 0s;
+  transition-duration: 1s, 1s;
+  transition-property: top, background;
+  transition-timing-function: ease-out, linear;
+  z-index: 100;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+}
+
+header .container {
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+  width: 90%;
+}
+
+.greyBox {
+  border-radius: 2px;
+  box-shadow: -1px 2px 46px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  clear: both;
+  padding: 1rem 2rem 0 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  width: 40%;
+}
+
+#root {
+  border-radius: 2px;
+  box-shadow: -1px 2px 46px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  clear: both;
+  padding: 1rem 2rem 2rem 2rem;
+  margin: 2rem auto;
+  width: 70%;
+}
+
+form.logIn {
+  text-align: left;
+}
+
+form.logIn .field {
+  margin: 1.5rem 0;
+}
+
+form img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.btn-default {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.is-green {
+  background: #067931;
+  color: #fff !important;
+  border-radius: 2px;
+  font-weight: 600;
+  width: 100%;
+}
+.is-green:hover,
+.is-green:active,
+.is-green:focus {
+  background: #363636;
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-group {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.mar-top {
+  margin-top: 1.2rem;
+}
+
+.todoWrapper {
+  background: #f2f2f2;
+  padding: 0.4rem 1rem;
+  margin: 0.2rem 0;
+  border-radius: 2px;
+}
+
+.todoWrapper:hover {
+  background: #cecece;
+  transition: all 0.35s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+}
+
+.todoWrapper .col-md-2 {
+  text-align: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Search */
+
+.searchContainer {
+  margin-top: 0.1rem;
+  margin-right: 0.6rem;
+  transform: rotateY(180deg);
+}
+
+.control.has-icons-left .input,
+.control.has-icons-left .select select {
+  text-align: left;
+}
+
+.searchContainer input[type="text"] {
+  width: 160px;
+  border-radius: 4px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  text-align: left;
+  transform: scaleX(-1);
+}
+
+.searchContainer input[type="text"]:focus {
+  width: 100%;
+  text-align: left;
+  transform: scaleX(-1);
+}
+
+.searchContainer input[type="text"]:active {
+  width: 100%;
+  text-align: left;
+  transform: scaleX(-1);
+}
+
+.searchContainer .control.has-icons-left .input,
+.searchContainer .control.has-icons-left .select select {
+  padding-left: 1rem;
+  padding-right: 2.25em;
+}
+
+/* Footer section */
+
+footer {
+  background-color: #f2f2f2; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#f2f2f2, white);
+  clear: both;
+  padding: 0 !important;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+footer .container-withMargin {
+  padding-bottom: 1rem;
+}
+
+footer .footerContainer {
+  border-top: 1px dotted #cecece;
+  border-bottom: 1px dotted #cecece;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer .footerContainer h2 {
+  display: block;
+}
+
+footer h2 {
+  border-bottom: 0;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  vertical-align: middle;
+}
+
+footer h2 span {
+  border-bottom: 0;
+}
+
+footer .footerList {
+  font-weight: 600;
+  line-height: 1.85rem;
+}
+
+footer p {
+  line-height: 1.7rem;
+}
+
+.copyright {
+  padding: 0.625rem 0;
+}
+
+footer .footer-widget-0 {
+  width: 11.2% !important;
+}
+
+footer .footer-widget-1 {
+  padding-top: 3rem;
+  width: 12% !important;
+}
+
+footer .footer-widget-2 {
+  margin-right: 8rem;
+}
+
+footer .footer-widget-3 {
+  margin-right: 4.33rem;
+}
+
+footer .footer-widget-4 img {
+  width: 45%;
+  border-radius: 2px;
+}
+
+.footerContainer a:hover,
+.footerContainer a:active,
+.footerContainer a:focus {
+  color: #000;
+}
+
+/*media all*/
+.button,
+.input,
+.textarea,
+.select select,
+.file-cta,
+.file-name,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+  display: inline-block;
+  height: auto;
+}
+
+.field.has-addons {
+  margin-top: 0.5rem;
+}
+
+.iconBtn .button {
+  display: inline-flex;
+}
+
+form fieldset legend {
+  display: inline-block;
+}
+
+.hidethis {
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .greyBox,
+  #root {
+    width: 90%;
+  }
+}
